@@ -74,6 +74,10 @@ impl ExponentialMovingAverage {
             }),
         }
     }
+
+    pub fn current(&self) -> f64 {
+        self.current
+    }
 }
 
 impl Period for ExponentialMovingAverage {
